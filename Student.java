@@ -1,4 +1,5 @@
 public class Student {
+    static int computeCount;
     int id;
     String name;
     String gender;
@@ -11,6 +12,7 @@ public class Student {
     double tuitionFees = 12000.0;
     double interationalFees = 5000.0;
     void compute(){
+        computeCount = computeCount+1;
         int nextId = id+1;
         if(international){
             tuitionFees = tuitionFees + interationalFees;
@@ -24,6 +26,8 @@ public class Student {
         System.out.println("gpa"+gpa);
         System.out.println("degree"+degree);
         System.out.println("tuitionFees"+tuitionFees);
+        System.out.println("compute counts"+computeCount);
+
     }
 
     public static void main(String[] args) {
@@ -37,5 +41,6 @@ public class Student {
         s.degree = 'B';
         s.international = false;
         s.compute();
+        Student computeCount  =  new Student();
     }
 }
