@@ -20,10 +20,24 @@ public class BasicsDemo {
         System.out.println(miValue);
         System.out.println(maValue);
     }
-
+    static void primitive(){
+        System.out.println("primitive value ..");
+        int intHex = 0x0041; // 16*1+16*4
+        System.out.println(intHex);
+        long longHex = 0x0041L; // 16*1+16*4
+        System.out.println(longHex);
+        //only form java 7
+        System.out.println("primitive binary value ..");
+        int intBinary = 0b1001;//0b01000001;
+        System.out.println(intBinary);
+        System.out.println("primitive octal value ..");
+        int iBinary = 0101;//0b01000001;
+        System.out.println(iBinary);
+    }
     public static void main(String[] args) {
         BasicsDemo bd = new BasicsDemo();
         bd.compute();
+        primitive();
     }
     
 }
