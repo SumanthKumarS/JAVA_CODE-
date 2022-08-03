@@ -1,3 +1,4 @@
+package EXAMPLE;
 public class Student {
     static int computeCount;
     int id;

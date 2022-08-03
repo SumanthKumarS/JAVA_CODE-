@@ -1,3 +1,4 @@
+package EXAMPLE;
 public class CurrencyConverter {
     int rupee = 63;
     int dirham = 3; // UAE

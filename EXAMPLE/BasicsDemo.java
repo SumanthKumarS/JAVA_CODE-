@@ -1,4 +1,4 @@
-
+package EXAMPLE;
 import java.math.BigDecimal;
 public class BasicsDemo {
     
